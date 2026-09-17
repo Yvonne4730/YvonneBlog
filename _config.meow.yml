@@ -5,13 +5,14 @@ info:
 banner:
   image:
     light: assets/images/background-light.jpg
+    dark: assets/images/background_night.jpg
     position: center center
   title:
     text: Yvonne！Greetings to you！
   subtitle:
     enable: true
     text:
-      - 技术是向内扎根，生活是向外生长。
+      - 欸  云朵
 menu:
   首页: / || uc-home
   全部文章: /articles/ || uc-article
@@ -20,7 +21,7 @@ menu:
   归档: /archives/ || uc-archive
 sidebar:
   info:
-    desc: 在技术里深耕，也认真感受每一个普通日子。
+    desc: 哒哒哒哒哒~
   categories:
     enable: false
   tags:
