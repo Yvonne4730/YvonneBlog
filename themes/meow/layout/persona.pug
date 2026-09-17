@@ -1,0 +1,24 @@
+extends page.pug
+
+block content
+  .persona-page(class='persona-page--' + page.persona)
+    .persona-intro
+      p.persona-eyebrow= page.eyebrow
+      h2= page.title
+      p= page.description
+    if page.posts && page.posts.length
+      .persona-posts
+        each post in page.posts
+          article.persona-post
+            p.persona-post__date= date(post.date, 'YYYY.MM.DD')
+            h3
+              a(href=url_for(post.path))= post.title
+            if post.excerpt
+              p.persona-post__excerpt!= strip_html(post.excerpt)
+            else
+              p.persona-post__excerpt!= truncate(strip_html(post.content).replace(/\s{2,}/g, ' '), {length: 120})
+            a.persona-post__link(href=url_for(post.path)) 阅读文章 →
+    else
+      .persona-empty
+        p 这里正在酝酿第一篇文章。
+        p 写作时在文章头部添加对应标签，它就会自动出现在这里。

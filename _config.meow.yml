@@ -1,0 +1,27 @@
+info:
+  favicon: assets/images/yvonne-avatar.png
+  logo: assets/images/yvonne-avatar.png
+  avatar: assets/images/yvonne-avatar.png
+banner:
+  image:
+    light: assets/images/background-light.jpg
+    position: center center
+  title:
+    text: Yvonne！Greetings to you！
+  subtitle:
+    enable: true
+    text:
+      - 技术是向内扎根，生活是向外生长。
+menu:
+  首页: / || uc-home
+  全部文章: /articles/ || uc-article
+  专业技术: /professional/ || uc-category
+  日常生活: /daily-life/ || uc-face
+  归档: /archives/ || uc-archive
+sidebar:
+  info:
+    desc: 在技术里深耕，也认真感受每一个普通日子。
+  categories:
+    enable: false
+  tags:
+    enable: false
