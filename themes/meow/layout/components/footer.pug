@@ -1,14 +1,7 @@
 .footer
   #footer-copyright
-    - let start_date = date(new Date(theme.info.start_date), "YYYY")
-    - let cr_year = "© " + start_date
-    if date(Date.now(), "YYYY") !== start_date
-      - cr_year = cr_year + " - " + date(Date.now(), "YYYY")
-
     if theme.footer.icon
-      - cr_year = cr_year + " <span>" + theme.footer.icon + "</span> "
-
-    | !{cr_year}
+      span= theme.footer.icon
     a(href=url_for(theme.footer.author_link))= config.author || "MEOW Team"
 
   #footer-info

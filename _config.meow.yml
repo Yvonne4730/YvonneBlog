@@ -25,3 +25,13 @@ sidebar:
     enable: false
   tags:
     enable: false
+  recent_comments:
+    enable: false
+comment:
+  enable: false
+  display: true
+  type: waline
+  lazyload: true
+  waline:
+    server_url:
+    lang: zh-CN
