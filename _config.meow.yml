@@ -28,10 +28,10 @@ sidebar:
   recent_comments:
     enable: false
 comment:
-  enable: false
+  enable: true
   display: true
   type: waline
   lazyload: true
   waline:
-    server_url:
+    server_url: https://myblogcomments-yvonne4730.vercel.app
     lang: zh-CN
