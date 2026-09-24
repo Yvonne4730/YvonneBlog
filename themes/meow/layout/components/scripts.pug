@@ -59,8 +59,10 @@
         document.querySelector('.post').style.fontSize = localStorage.getItem('font-size') + 'px';
       }
 
-  if theme.comment.enable && (page.comment || (is_post() && theme.comment.display && page.comment == undefined))
-    != partial('components/comment/waline', {}, {cache: true})
+  //- 评论区提示：评论服务暂未接入服务器与数据库，暂停 waline 初始化，评论区仅展示提示文案。
+  //- 恢复评论功能时，取消下面两行注释即可。
+  //- if theme.comment.enable && (page.comment || (is_post() && theme.comment.display && page.comment == undefined))
+  //-   != partial('components/comment/waline', {}, {cache: true})
 
   if is_home() && theme.sidebar.recent_comments.enable && theme.comment.enable
     != partial('components/comment/waline-widget', {}, {cache: true})

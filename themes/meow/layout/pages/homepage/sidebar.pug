@@ -31,7 +31,7 @@ aside#home-sidebar
             .site-statistic-title= __('archives')
           a(href=url_for(config.tag_dir))
             .site-statistic-num= site.tags.length
-            .site-statistic-title= '系列'
+            .site-statistic-title= __('tags')
 
       if theme.sidebar.info.social.enable
         if theme.sidebar.info.social.list
@@ -72,7 +72,7 @@ aside#home-sidebar
     .sidebar-card#sidebar-tags
       .sidebar-card-headline
         != getSvg('tag', {class:'icon box-icon'})
-        span= '系列'
+        span= __('tags')
       #sidebar-tags-content
         != list_tags(site.tags, {class:'sidebar-tags', style: false, separator:' ', orderby:'count', order: -1})
 

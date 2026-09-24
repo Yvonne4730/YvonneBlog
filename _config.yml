@@ -28,9 +28,6 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-# 首页是独立的双入口落地页，不经过主题布局二次渲染。
-skip_render:
-  - index.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -62,8 +59,8 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  # 根路径保留给「认识 Yvonne」的双入口页；全部文章在 /articles/。
-  path: articles
+  # 首页即「全部文章」：根路径渲染全量文章列表。
+  path: ''
   per_page: 10
   order_by: -date
 
